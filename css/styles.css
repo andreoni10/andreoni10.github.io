@@ -966,7 +966,7 @@ body {
 }
 
 .whatsapp-icon {
-    width: 75px; /* Tamanho do ícone (ajuste conforme necessário) */
+    width: 65px; /* Tamanho do ícone (ajuste conforme necessário) */
     height: auto; /* Mantém a proporção */
     border-radius: 50%; /* Opcional: para deixar o ícone redondo */
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Sombra para destacá-lo */
