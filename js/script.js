@@ -74,35 +74,35 @@ window.addEventListener('scroll', function() {
 // });
 
 // Form submission
-// document.querySelector('.contact-form').addEventListener('submit', function(e) {
-//     e.preventDefault();
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
     
-//     // Get form data
-//     // const formData = new FormData(this);
-//     // const name = formData.get('name');
-//     // const email = formData.get('email');
-//     // const telephone = formData.get('telephone');
+    // Get form data
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const telephone = formData.get('telephone');
     
-//     // Simple validation
-//     // if (!name || !email || !telephone) {
-//     //     alert('Por favor, preencha todos os campos.');
-//     //     return;
-//     // }
+    // Simple validation
+    if (name === '' || email === '' || telephone === '') {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
     
-//     // Simulate form submission
-//     const submitBtn = this.querySelector('button[type="submit"]');
-//     const originalText = submitBtn.textContent;
+    // Simulate form submission
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
     
-//     submitBtn.textContent = 'Enviando...';
-//     submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
     
-//     setTimeout(() => {
-//         alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-//         this.reset();
-//         submitBtn.textContent = originalText;
-//         submitBtn.disabled = false;
-//     }, 2000);
-// });
+    setTimeout(() => {
+        alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+        this.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }, 2000);
+});
 
 // Animate elements on scroll
 function animateOnScroll() {

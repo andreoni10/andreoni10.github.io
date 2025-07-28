@@ -321,7 +321,7 @@
 
           <div class="form-group">
             <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
@@ -425,54 +425,54 @@
     })
 
     // Envio do formulário via AJAX
-    document.querySelector('.contact-form').addEventListener('submit', function (e) {
-      e.preventDefault(); // Previne o comportamento padrão do formulário
+    // document.querySelector('.contact-form').addEventListener('submit', function (e) {
+    //   e.preventDefault(); // Previne o comportamento padrão do formulário
 
-      const form = this;
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
+    //   const form = this;
+    //   const submitBtn = form.querySelector('button[type="submit"]');
+    //   const originalText = submitBtn.textContent;
 
-      // Mostra estado de carregamento
-      submitBtn.textContent = 'Enviando...';
-      submitBtn.disabled = true;
+    //   // Mostra estado de carregamento
+    //   submitBtn.textContent = 'Enviando...';
+    //   submitBtn.disabled = true;
 
-      // Coleta os dados do formulário
-      const formData = new FormData(form);
+    //   // Coleta os dados do formulário
+    //   const formData = new FormData(form);
 
-      // Envia via AJAX
-      fetch(window.location.pathname, {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'X-Requested-With': 'XMLHttpRequest',
-          'X-CSRFToken': formData.get('csrfmiddlewaretoken')
-        }
-      })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            // Sucesso - mostra mensagem e limpa formulário
-            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-            form.reset();
-          } else {
-            // Erro - mostra erros
-            let errorMessage = 'Erro ao enviar formulário:\n';
-            for (let field in data.errors) {
-              errorMessage += `${field}: ${data.errors[field].join(', ')}\n`;
-            }
-            alert(errorMessage);
-          }
-        })
-        .catch(error => {
-          console.error('Erro:', error);
-          alert('Erro ao enviar formulário. Tente novamente.');
-        })
-        .finally(() => {
-          // Restaura botão
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        });
-    });
+    //   // Envia via AJAX
+    //   fetch(window.location.pathname, {
+    //     method: 'POST',
+    //     body: formData,
+    //     headers: {
+    //       'X-Requested-With': 'XMLHttpRequest',
+    //       'X-CSRFToken': formData.get('csrfmiddlewaretoken')
+    //     }
+    //   })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //       if (data.success) {
+    //         // Sucesso - mostra mensagem e limpa formulário
+    //         alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+    //         form.reset();
+    //       } else {
+    //         // Erro - mostra erros
+    //         let errorMessage = 'Erro ao enviar formulário:\n';
+    //         for (let field in data.errors) {
+    //           errorMessage += `${field}: ${data.errors[field].join(', ')}\n`;
+    //         }
+    //         alert(errorMessage);
+    //       }
+    //     })
+    //     .catch(error => {
+    //       console.error('Erro:', error);
+    //       alert('Erro ao enviar formulário. Tente novamente.');
+    //     })
+    //     .finally(() => {
+    //       // Restaura botão
+    //       submitBtn.textContent = originalText;
+    //       submitBtn.disabled = false;
+    //     });
+    // });
   </script>
 </body>
 
