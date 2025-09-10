@@ -45,7 +45,7 @@ body {
 .container {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 /* Header */
@@ -77,7 +77,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 3rem;
+    gap: 1.7em;
     align-items: center;
 }
 
@@ -518,7 +518,7 @@ body {
     max-width: 800px;
     max-height: 800px;
     border-radius: 0.5rem;
-    width: 100%;
+    width: 39rem;
     max-width: 735px;
     height: auto;
     display: block;
@@ -656,7 +656,7 @@ body {
 }
 
 .section-escritorio {
-    background: linear-gradient(to right, rgb(255, 255, 255) 35%, rgba(0, 0, 0, 0.05)), url('../images/escritorio/image.png');
+    background: linear-gradient(to right, rgb(255, 255, 255) 35%, rgba(0, 0, 0, 0.05)), url('../images/escritorio/image_escritorio.png');
     background-size: cover;
     background-position: center;
 }
@@ -747,8 +747,9 @@ body {
 .footer-bottom {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
+    text-align: justify;
     opacity: 0.8;
+    font-size: xx-small;
 }
 
 /* Responsive */
@@ -957,6 +958,7 @@ body {
     }
 }
 
+
 /* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed; /* Fixa o elemento na tela */
@@ -966,13 +968,13 @@ body {
 }
 
 .whatsapp-icon {
-    width: 65px; /* Tamanho do ícone (ajuste conforme necessário) */
-    height: auto; /* Mantém a proporção */
-    border-radius: 50%; /* Opcional: para deixar o ícone redondo */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Sombra para destacá-lo */
-    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-icon:hover {
-    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+    transform: scale(1.1);
 }
