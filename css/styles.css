@@ -267,7 +267,7 @@ body {
 .card {
     width: 100%;
     max-width: 24rem;
-    height: 34rem;
+    height: 28rem;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -643,7 +643,75 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--gold);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+/* Checkbox custom */
+.form-group.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    font-size: .85rem;
+    line-height: 1.3;
+    margin-top: 1rem;
+}
+
+.form-group.form-consent input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: border-color .25s, box-shadow .25s, background .35s;
+}
+
+.form-group.form-consent input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* tamanho do “V” */
+    width: 7px;
+    height: 12px;
+    border: 2px solid #000;
+    border-top: 0;
+    border-left: 0;
+    /* centraliza e esconde inicialmente */
+    transform: translate(-50%, -55%) rotate(45deg) scale(0);
+    transform-origin: center;
+    transition: transform .22s ease;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.form-group.form-consent input[type="checkbox"]:hover {
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25);
+}
+
+.form-group.form-consent input[type="checkbox"]:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.28);
+}
+
+.form-group.form-consent input[type="checkbox"]:checked {
+    background: var(--gold);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.18);
+}
+
+.form-group.form-consent input[type="checkbox"]:checked::after {
+    transform: translate(-50%, -55%) rotate(45deg) scale(1);
+}
+
+.form-group.form-consent label {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary);
+    user-select: none;
 }
 
 /* Escritório */
@@ -740,8 +808,8 @@ body {
 }
 
 .footer-column i {
-    font-size:35px;
-    color:white;
+    font-size: 35px;
+    color: white;
 }
 
 .footer-bottom {
@@ -961,10 +1029,14 @@ body {
 
 /* WhatsApp Floating Button */
 .whatsapp-float {
-    position: fixed; /* Fixa o elemento na tela */
-    bottom: 20px;    /* 20px de distância da parte inferior */
-    right: 20px;     /* 20px de distância da direita */
-    z-index: 1000;   /* Garante que o ícone fique acima de outros elementos */
+    position: fixed;
+    /* Fixa o elemento na tela */
+    bottom: 20px;
+    /* 20px de distância da parte inferior */
+    right: 20px;
+    /* 20px de distância da direita */
+    z-index: 1000;
+    /* Garante que o ícone fique acima de outros elementos */
 }
 
 .whatsapp-icon {
@@ -977,4 +1049,27 @@ body {
 
 .whatsapp-icon:hover {
     transform: scale(1.1);
+}
+
+/* Seleção de texto personalizada */
+::selection {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FFD700, #FFA500);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #FFA500, #FFD700);
 }
