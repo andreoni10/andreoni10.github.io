@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Andreoni | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body x-data="{ menuOpen: false, lang: 'pt' }">
+
+    <nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#sobre">
+                <img src="images/logo.png" alt="Andreoni" style="width: 100%; max-width: 150px;">
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#sobre" class="hover:text-white transition" x-text="lang === 'pt' ? 'Sobre' : 'About'"></a>
+                <a href="#experiencia" class="hover:text-white transition"
+                    x-text="lang === 'pt' ? 'Trajetória' : 'Experience'"></a>
+                <a href="#projetos" class="hover:text-white transition"
+                    x-text="lang === 'pt' ? 'Projetos' : 'Projects'"></a>
+                <a href="#certificacoes" class="hover:text-white transition"
+                    x-text="lang === 'pt' ? 'Formação' : 'Education'"></a>
+            </div>
+            <div class="flex items-center gap-4">
+                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <circle cx="45" cy="45" r="45"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(34,158,69); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <path
+                            d="M 45.168 68.369 l 35.957 -23.337 l -36.175 -23.4 L 8.875 45.088 L 45.168 68.369 L 45.168 68.369 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(248,229,9); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 60.835 45.001 c 0 8.388 -6.81 15.187 -15.212 15.187 c -8.401 0 -15.212 -6.8 -15.212 -15.187 s 6.811 -15.187 15.212 -15.187 C 54.025 29.813 60.835 36.613 60.835 45.001 L 60.835 45.001 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(43,73,163); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 40.623 54.097 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.543 l -0.377 -0.397 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.373 M 50.817 56.678 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.543 l -0.377 -0.397 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.373 M 46.423 52.555 l -0.406 -0.234 l -0.422 0.208 l 0.094 -0.469 l -0.326 -0.343 l 0.466 -0.055 l 0.219 -0.42 l 0.195 0.435 l 0.46 0.083 l -0.345 0.323 M 56.718 51.072 l -0.399 -0.23 l -0.414 0.205 l 0.093 -0.46 l -0.32 -0.337 l 0.457 -0.054 l 0.215 -0.413 l 0.192 0.427 l 0.451 0.082 l -0.338 0.317 M 46.237 47.985 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.543 l -0.377 -0.397 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.373 M 33.685 43.273 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.542 l -0.377 -0.398 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.373 M 35.195 49.542 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.542 l -0.377 -0.398 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.374 M 50.858 39.965 l -0.415 -0.239 l -0.431 0.213 l 0.097 -0.479 l -0.333 -0.351 l 0.476 -0.056 l 0.224 -0.43 l 0.2 0.445 l 0.47 0.085 l -0.352 0.33"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,239); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 40.623 46.502 l -0.47 -0.271 l -0.488 0.242 l 0.109 -0.542 l -0.377 -0.398 l 0.539 -0.063 l 0.253 -0.487 l 0.226 0.503 l 0.532 0.097 l -0.399 0.374"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,239); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 59.833 50.464 c 0.232 -0.606 0.531 -1.521 0.69 -2.36 c -8.079 -7.097 -17.086 -10.733 -28.467 -9.985 c -0.408 0.782 -0.735 1.601 -1.01 2.487 C 44.531 39.32 54.415 45.29 59.833 50.464 L 59.833 50.464 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                </svg>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" @change="lang = $event.target.checked ? 'en' : 'pt'"
+                        :checked="lang === 'en'" />
+                    <div
+                        class="group peer bg-gradient-to-r from-green-500 to-yellow-400 rounded-full duration-300 w-16 h-8 ring-2 ring-green-600 peer-checked:ring-blue-700 peer-checked:bg-gradient-to-r peer-checked:from-blue-700 peer-checked:to-red-600 after:duration-300 after:bg-white after:rounded-full after:absolute after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-8 peer-hover:after:scale-95 after:content-['⇌'] after:text-slate-700 after:font-bold">
+                    </div>
+                </label>
+                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <path
+                            d="M 0.511 51.794 c 0.924 6.099 3.076 11.793 6.19 16.83 h 76.599 c 3.114 -5.037 5.266 -10.731 6.19 -16.83 H 0.511 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 69.638 82.649 H 20.362 C 27.441 87.291 35.902 90 45 90 S 62.559 87.291 69.638 82.649 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 6.701 68.624 c 3.472 5.617 8.146 10.408 13.661 14.025 h 49.276 c 5.516 -3.617 10.189 -8.408 13.661 -14.025 H 6.701 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(220,48,39); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 49.629 0.236 C 48.107 0.08 46.563 0 45 0 C 20.147 0 0 20.147 0 45 c 0 2.309 0.175 4.578 0.511 6.794 h 49.118 V 0.236 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(40,57,145); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 13.688 23.094 l -1.392 -4.274 l 3.625 -2.635 h -4.483 l -0.273 -0.837 c -1.422 1.621 -2.728 3.344 -3.908 5.158 l -0.843 2.588 l 3.636 -2.643 L 13.688 23.094 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 22.743 9.658 l 3.62 2.631 l -1.388 -4.262 l 3.621 -2.646 h -4.483 l -0.066 -0.204 c -1.414 0.746 -2.787 1.558 -4.107 2.444 l 0.568 0.413 l -1.366 4.255 L 22.743 9.658 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <polygon
+                            points="7.81,40.43 6.42,44.7 10.05,42.06 13.69,44.7 12.3,40.43 15.92,37.79 11.44,37.79 10.05,33.53 8.66,37.79 4.18,37.79 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <polygon
+                            points="33.21,40.43 31.82,44.7 35.45,42.06 39.09,44.7 37.7,40.43 41.32,37.79 36.84,37.79 35.45,33.53 34.07,37.79 29.58,37.79 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <polygon
+                            points="33.21,18.82 31.82,23.09 35.45,20.45 39.09,23.09 37.7,18.82 41.32,16.18 36.84,16.18 35.45,11.93 34.07,16.18 29.58,16.18 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <polygon
+                            points="20.48,29.62 19.09,33.9 22.73,31.26 26.36,33.9 24.97,29.62 28.6,26.99 24.11,26.99 22.73,22.73 21.34,26.99 16.86,26.99 "
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform="  matrix(1 0 0 1 0 0) " />
+                        <path
+                            d="M 89.414 37.768 H 49.629 v 14.025 h 39.86 C 89.825 49.578 90 47.309 90 45 C 90 42.537 89.794 40.124 89.414 37.768 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(220,48,39); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 49.629 37.768 h 39.785 c -0.988 -6.111 -3.209 -11.806 -6.395 -16.83 H 49.629 V 37.768 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                            d="M 49.629 20.938 h 33.389 c -3.587 -5.656 -8.397 -10.454 -14.064 -14.025 H 49.629 V 20.938 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(220,48,39); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 49.629 0.24 v 6.673 h 19.326 C 63.248 3.316 56.681 0.963 49.629 0.24 z"
+                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;"
+                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <section id="sobre"
+        class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 text-center relative overflow-hidden">
+        <div class="absolute w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -top-24 -left-24"></div>
+
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div data-aos="fade-up">
+            <h2 class="text-blue-500 font-bold tracking-[0.3em] uppercase text-xs mb-4"
+                x-text="lang === 'pt' ? 'Engenharia da Computação' : 'Computer Engineering'"></h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                Lucas <span class="text-gradient">Andreoni</span>
+            </h1>
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed mb-10"
+                x-text="lang === 'pt' ? 'Focado em solucionar problemas reais por meio do uso inteligente da tecnologia.' : 'Focused on solving real problems through the intelligent use of technology.'">
+
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://linkedin.com/in/lucashernandesandreoni" target="_blank"
+                    class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-xl transition">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+                </a>
+                <a href="https://github.com/andreoni10" target="_blank"
+                    class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-xl transition">
+                    <i data-lucide="github" class="w-5 h-5"></i> GitHub
+                </a>
+                <a href="tel:+5581992025501"
+                    class="flex items-center gap-2 bg-blue-600/10 text-blue-400 border border-blue-500/20 px-6 py-3 rounded-xl hover:bg-blue-600/20 transition">
+                    <i data-lucide="phone" class="w-5 h-5"></i> +55 (81) 99202-5501
+                </a>
+                <a href="mailto:lucasandreoni2000@gmail.com"
+                    class="flex items-center gap-2 bg-blue-600/10 text-blue-400 border border-blue-500/20 px-6 py-3 rounded-xl hover:bg-blue-600/20 transition">
+                    <i data-lucide="mail" class="w-5 h-5"></i> lucasandreoni2000@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 scroll-indicator">
+            <i data-lucide="chevron-down" class="text-slate-500"></i>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
+            <h2 class="text-3xl font-bold"
+                x-text="lang === 'pt' ? 'Experiência Profissional' : 'Professional Experience'"></h2>
+            <div class="h-px flex-1 bg-white/10"></div>
+        </div>
+
+        <div class="space-y-12">
+            <div class="relative pl-8 border-l-2 border-blue-500/30 group" data-aos="fade-up">
+                <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 group-hover:scale-125 transition">
+                </div>
+                <div class="flex flex-wrap justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white" x-text="lang === 'pt' ? 'Analista' : 'Analyst'"></h3>
+                        <p class="text-blue-400 font-semibold">Axis Gestão e Negócios Imobiliários</p>
+                    </div>
+                    <span class="text-sm font-mono text-slate-400"
+                        x-text="lang === 'pt' ? 'Set 2024 - Atualmente' : 'Sep 2024 - Currently '"></span>
+                </div>
+                <p class="text-slate-400 mb-4 italic" x-text="lang === 'pt' ? 'Atuação Remota.' : 'Remote Work.'"></p>
+                <ul class="space-y-3 text-slate-300">
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Auditoria de contratos imobiliários.' : 'Realization of real estate contracts audits.'"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-white/10 group" data-aos="fade-up">
+                <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-blue-400 transition">
+                </div>
+                <div class="flex flex-wrap justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-300"
+                            x-text="lang === 'pt' ? 'Analista de Sistemas Junior' : 'Junior Systems Analyst'">
+                        </h3>
+                        <p class="text-slate-400">Deloitte Touche Tohmatsu Limited</p>
+                    </div>
+                    <span class="text-sm font-mono text-slate-400"
+                        x-text="lang === 'pt' ? 'Nov 2023 - Set 2024' : 'Nov 2023 - Sep 2024'"></span>
+                </div>
+                <p class="text-slate-400 mb-4 italic" x-text="lang === 'pt' ? 'Atuação Remota.' : 'Remote Work.'"></p>
+                <ul class="space-y-3 text-slate-400">
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Desenvolvimento e manutenção de Robôs RPA (UiPath).' : 'Development and maintenance of RPA Robots (UiPath).'"></span>
+                    </li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Manutenção Web Fullstack (C# e .Net Framework).' : 'Web Fullstack Maintenance (C# and .Net Framework).'"></span>
+                    </li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Manutenção de aplicação Desktop em Python.' : 'Desktop Application Maintenance in Python.'"></span>
+                    </li>
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Responsável por Robôs e treinamento de novos estagiários.' : 'Responsible for Robots and training of new interns.'"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-white/10 group" data-aos="fade-up">
+                <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-blue-400 transition">
+                </div>
+                <div class="flex flex-wrap justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-300" x-text="lang === 'pt' ? 'Estagiário' : 'Intern'">
+                        </h3>
+                        <p class="text-slate-400">Deloitte Touche Tohmatsu Limited</p>
+                    </div>
+                    <span class="text-sm font-mono text-slate-400"
+                        x-text="lang === 'pt' ? 'Set 2022 - Nov 2023' : 'Sep 2022 - Nov 2023'"></span>
+                </div>
+                <p class="text-slate-400 mb-4 italic" x-text="lang === 'pt' ? 'Atuação Remota.' : 'Remote Work.'"></p>
+                <ul class="space-y-3 text-slate-400">
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Desenvolvimento e manutenção de Robôs RPA (UiPath).' : 'Development and maintenance of RPA Robots (UiPath).'"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-white/10 group" data-aos="fade-up">
+                <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-blue-400 transition">
+                </div>
+                <div class="flex flex-wrap justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-300" x-text="lang === 'pt' ? 'Analista' : 'Analyst'">
+                        </h3>
+                        <p class="text-slate-400">Axis Gestão e Negócios Imobiliários</p>
+                    </div>
+                    <span class="text-sm font-mono text-slate-400"
+                        x-text="lang === 'pt' ? 'Jan 2020 - Ago 2022' : 'Jan 2020 - Aug 2022'"></span>
+                </div>
+                <p class="text-slate-400 mb-4 italic" x-text="lang === 'pt' ? 'Atuação Remota.' : 'Remote Work.'"></p>
+                <ul class="space-y-3 text-slate-400">
+                    <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-slate-600 shrink-0"></i>
+                        <span
+                            x-text="lang === 'pt' ? 'Auditoria de contratos imobiliários.' : 'Realization of real estate contracts audits.'"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-24 bg-slate-900/50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up"
+                x-text="lang === 'pt' ? 'Projetos & Inovações' : 'Projects & Innovations'"></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-tech p-8 rounded-2xl" data-aos="zoom-in">
+                    <div class="mb-6 text-blue-500">
+                        <img src="images/accanto.png" class="w-full h-40 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white"
+                        x-text="lang === 'pt' ? 'Accanto Investimentos' : 'Accanto Investments'"></h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed"
+                        x-text="lang === 'pt' ? 'Desenvolvimento de Landing Page para escritório credenciado à XP utilizando Django.' : 'Development of a Landing Page for an XP-licensed office using Django.'">
+                    </p>
+                    <p class="mb-6">
+                        <span
+                            class="px-3 py-1 bg-green-500/10 text-green-400 text-[10px] rounded-full font-bold uppercase">Django</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-[10px] rounded-full font-bold uppercase">Python</span>
+                        <span
+                            class="px-3 py-1 bg-orange-500/10 text-orange-400 text-[10px] rounded-full font-bold uppercase">HTML</span>
+                        <span
+                            class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] rounded-full font-bold uppercase">CSS</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-600/10 text-yellow-600 text-[10px] rounded-full font-bold uppercase">JavaScript</span>
+                    </p>
+                    <a href="https://www.accantoinvestimentos.com.br/" target="_blank"
+                        class="text-white-400 text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
+                        <span x-text="lang === 'pt' ? 'Ver Site' : 'View Site'"></span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="card-tech p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="mb-6 text-blue-500"><img src="images/intelifisco.png"
+                            class="w-full h-40 object-contain"></div>
+                    <h3 class="text-xl font-bold mb-4 text-white"
+                        x-text="lang === 'pt' ? 'Intelifisco' : 'Intelifisco'"></h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed"
+                        x-text="lang === 'pt' ? 'Landing Page para consultoria tributária desenvolvida com Django Framework.' : 'Landing Page for tax consulting developed with Django Framework.'">
+                    </p>
+                    <p class="mb-6">
+                        <span
+                            class="px-3 py-1 bg-green-500/10 text-green-400 text-[10px] rounded-full font-bold uppercase">Django</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-[10px] rounded-full font-bold uppercase">Python</span>
+                        <span
+                            class="px-3 py-1 bg-orange-500/10 text-orange-400 text-[10px] rounded-full font-bold uppercase">HTML</span>
+                        <span
+                            class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] rounded-full font-bold uppercase">CSS</span>
+                        <span
+                            class="px-3 py-1 bg-yellow-600/10 text-yellow-600 text-[10px] rounded-full font-bold uppercase">JavaScript</span>
+                    </p>
+                    <a href="https://www.intelifisco.com.br/pt-br/" target="_blank"
+                        class="text-[#FFD74B] text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
+                        <span x-text="lang === 'pt' ? 'Ver Site' : 'View Site'"></span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="card-tech p-8 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="mb-6 text-blue-500"><img src="images/inova_repe.png" class="w-full h-40 object-contain">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white" x-text="lang === 'pt' ? 'INOVA REPE' : 'INOVA REPE'">
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed"
+                        x-text="lang === 'pt' ? 'Aprovado no programa de inovação aberta da Universidade de Pernambuco.' : 'Approved in the open innovation program of the University of Pernambuco.'">
+                    </p>
+                    <p class="mb-6">
+                        <span
+                            class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] rounded-full font-bold uppercase"
+                            x-text="lang === 'pt' ? 'Inovação' : 'Inovation'"></span>
+                    </p>
+                    <a href="https://www.inovarepe.com/index.php" target="_blank"
+                        class="text-[#EE0FF2] text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
+                        <span x-text="lang === 'pt' ? 'Ver Site' : 'View Site'"></span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificacoes" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-bold mb-10"
+                    x-text="lang === 'pt' ? 'Histórico Acadêmico' : 'Academic History'"></h2>
+                <div class="card-tech p-8 rounded-3xl border-l-4 border-l-blue-500">
+                    <h3 class="text-xl font-bold text-white mb-2"
+                        x-text="lang === 'pt' ? 'Engenharia da Computação' : 'Computer Engineering'"></h3>
+                    <p class="text-blue-400 mb-4">Universidade de Pernambuco (UPE)</p>
+                    <p class="text-slate-500 text-sm italic"
+                        x-text="lang === 'pt' ? 'Cursando - Bacharelado' : 'Currently enrolled - Bachelor Degree'"></p>
+                </div>
+
+                <div class="mt-12">
+                    <h3 class="text-lg font-bold mb-6 text-white uppercase tracking-widest"
+                        x-text="lang === 'pt' ? 'Idiomas' : 'Languages'"></h3>
+                    <div class="flex gap-4">
+                        <div class="px-6 py-3 bg-white/5 rounded-2xl border border-white/10 flex items-center gap-3">
+                            <span class="text-xl">🇧🇷</span> <span
+                                x-text="lang === 'pt' ? 'Português' : 'Portuguese'"></span>
+                        </div>
+                        <div class="px-6 py-3 bg-white/5 rounded-2xl border border-white/10 flex items-center gap-3">
+                            <span class="text-xl">🇺🇸</span> <span
+                                x-text="lang === 'pt' ? 'Inglês' : 'English'"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-10" x-text="lang === 'pt' ? 'Certificações' : 'Certifications'"></h2>
+                <div class="grid gap-4 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Cesar School</p>
+                        <h4 class="font-semibold text-sm">FAST - Engenharia de Qualidade de Software</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Fundação Estudar</p>
+                        <h4 class="font-semibold text-sm">CS50: Introduction to Computer Science</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Udemy</p>
+                        <h4 class="font-semibold text-sm">Spring Boot, Hibernate, REST, JWT, MySQL/MongoDB</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Linkedin Learning</p>
+                        <h4 class="font-semibold text-sm">What Is Generative AI?</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Rocketseat</p>
+                        <h4 class="font-semibold text-sm">NLW Agents</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Rocketseat</p>
+                        <h4 class="font-semibold text-sm">Desafio Micro SaaS</h4>
+                    </div>
+                    <div class="p-4 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition">
+                        <p class="text-blue-400 text-xs font-bold mb-1">Cambridge</p>
+                        <h4 class="font-semibold text-sm">Key English Test (KET)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5 bg-slate-950 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center gap-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-2">Lucas Hernandes Andreoni</h3>
+                <p class="text-slate-500">Recife, Pernambuco - Brasil</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://github.com/andreoni10" class="text-slate-400 hover:text-white transition"><i
+                        data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/lucashernandesandreoni"
+                    class="text-slate-400 hover:text-white transition"><i data-lucide="linkedin"></i></a>
+            </div>
+            <p class="text-slate-600 text-xs uppercase tracking-widest mt-8">lucasandreoni2000@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
