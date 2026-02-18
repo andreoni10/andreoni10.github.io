@@ -140,8 +140,10 @@
         class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 text-center relative overflow-hidden">
         <div class="absolute w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -top-24 -left-24"></div>
 
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-40">
+        <video autoplay muted loop playsinline webkit-playsinline
+            class="absolute inset-0 w-full h-full object-cover z-0 opacity-40" preload="auto">
             <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
             Seu navegador não suporta vídeos.
         </video>
 
