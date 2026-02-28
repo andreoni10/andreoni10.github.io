@@ -139,12 +139,24 @@
 .resume-modal {
     background: #151515;
     border: 1px solid rgba(255, 135, 0, 0.25);
-    padding: 50px 48px;
+    padding: 30px 20px;
     max-width: 480px;
     width: 90%;
     position: relative;
     transform: translateY(30px) scale(0.97);
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (min-width: 480px) {
+    .resume-modal {
+        padding: 40px 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .resume-modal {
+        padding: 50px 48px;
+    }
 }
 
 .resume-modal-overlay.active .resume-modal {
@@ -172,14 +184,28 @@
 .resume-download-btn {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 22px 28px;
+    gap: 12px;
+    padding: 16px 20px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: border-color 0.4s, background 0.4s, transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     text-decoration: none;
     color: #fff;
     margin-bottom: 12px;
+}
+
+@media (min-width: 480px) {
+    .resume-download-btn {
+        gap: 14px;
+        padding: 18px 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .resume-download-btn {
+        gap: 16px;
+        padding: 22px 28px;
+    }
 }
 
 .resume-download-btn:hover {
@@ -193,19 +219,88 @@
 }
 
 .resume-btn-icon {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     background: rgba(255, 135, 0, 0.1);
     border: 1px solid rgba(255, 135, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     transition: background 0.3s, border-color 0.3s;
+}
+
+@media (min-width: 480px) {
+    .resume-btn-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .resume-btn-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+    }
 }
 
 .resume-download-btn:hover .resume-btn-icon {
     background: rgba(255, 135, 0, 0.2);
     border-color: #FF8700;
+}
+
+/* Additional Responsive Adjustments */
+@media (max-width: 640px) {
+    /* Ajuste para telas muito pequenas */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Garantir que o texto não fique muito pequeno */
+    .timeline-body,
+    p {
+        line-height: 1.6;
+    }
+    
+    /* Ajustar espaçamento em telas pequenas */
+    .timeline-content {
+        padding: 1rem !important;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    /* Ajustes para tablets pequenos */
+    .timeline-content {
+        padding: 1.5rem !important;
+    }
+}
+
+/* Melhorar scroll suave em mobile */
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Ajustar altura máxima da lista de certificações em mobile */
+    .max-h-\[500px\] {
+        max-height: 400px;
+    }
+}
+
+/* Garantir que imagens não quebrem o layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para orientação paisagem em mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+    .min-h-screen {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }

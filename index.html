@@ -44,26 +44,26 @@
 <body class="bg-black text-white font-sans overflow-x-hidden leading-relaxed" x-data="{ lang: 'pt' }">
 
     <header
-        class="fixed top-0 w-full z-[1000] px-[8vw] py-6 flex justify-between items-center bg-gradient-to-b from-black/90 to-transparent backdrop-blur-md">
-        <a href="#hero" class="font-outfit text-[1.4rem] font-black text-white">PORTFOLIO</a>
+        class="fixed top-0 w-full z-[1000] px-[5vw] sm:px-[6vw] md:px-[7vw] lg:px-[8vw] py-4 sm:py-5 md:py-6 flex justify-between items-center bg-gradient-to-b from-black/90 to-transparent backdrop-blur-md">
+        <a href="#hero" class="font-outfit text-[1.1rem] sm:text-[1.2rem] md:text-[1.4rem] font-black text-white">PORTFOLIO</a>
         <nav class="hidden md:flex">
-            <ul class="flex list-none gap-9">
+            <ul class="flex list-none gap-5 md:gap-7 lg:gap-9">
                 <li><a href="#experiencia"
-                        class="text-[0.8rem] font-bold uppercase tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Experiência</a>
+                        class="text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem] font-bold uppercase tracking-[0.12em] md:tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Experiência</a>
                 </li>
                 <li><a href="#formacao"
-                        class="text-[0.8rem] font-bold uppercase tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Formação</a>
+                        class="text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem] font-bold uppercase tracking-[0.12em] md:tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Formação</a>
                 </li>
                 <li><a href="#projetosAccanto"
-                        class="text-[0.8rem] font-bold uppercase tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Projetos</a>
+                        class="text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem] font-bold uppercase tracking-[0.12em] md:tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Projetos</a>
                 </li>
                 <li><a href="#footer"
-                        class="text-[0.8rem] font-bold uppercase tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Contato</a>
+                        class="text-[0.7rem] md:text-[0.75rem] lg:text-[0.8rem] font-bold uppercase tracking-[0.12em] md:tracking-[0.15em] text-text-gray hover:text-papaya-orange hover:-translate-y-0.5 transition-all duration-500 ease-premium">Contato</a>
                 </li>
             </ul>
         </nav>
         <button id="downloadCVBtn"
-            class="hidden md:block bg-papaya-orange text-black px-6 py-3 font-black text-[0.75rem] uppercase tracking-widest rounded-[2px] hover:brightness-110 transition-all duration-500 ease-premium cursor-pointer">
+            class="hidden md:block bg-papaya-orange text-black px-4 md:px-5 lg:px-6 py-2 md:py-2.5 lg:py-3 font-black text-[0.65rem] md:text-[0.7rem] lg:text-[0.75rem] uppercase tracking-wider md:tracking-widest rounded-[2px] hover:brightness-110 transition-all duration-500 ease-premium cursor-pointer">
             Download CV
         </button>
 
@@ -87,15 +87,15 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <p class="text-[0.7rem] font-bold text-papaya-orange uppercase tracking-[0.25em] mb-3">Download CV</p>
-            <h2 class="font-outfit text-[2rem] font-black uppercase tracking-tighter text-white leading-tight mb-2">
+            <p class="text-[0.65rem] sm:text-[0.7rem] font-bold text-papaya-orange uppercase tracking-[0.2em] sm:tracking-[0.25em] mb-2 sm:mb-3">Download CV</p>
+            <h2 class="font-outfit text-[1.5rem] sm:text-[1.75rem] md:text-[2rem] font-black uppercase tracking-tighter text-white leading-tight mb-2">
                 Baixar<br>Currículo</h2>
-            <p class="text-text-gray text-[0.85rem] mb-8">Escolha o idioma desejado para fazer o download.</p>
+            <p class="text-text-gray text-[0.8rem] sm:text-[0.85rem] mb-6 sm:mb-8">Escolha o idioma desejado para fazer o download.</p>
             <div class="flex flex-col">
                 <a href="./CV_files/CV_Lucas_Hernandes_Andreoni.pdf" download class="resume-download-btn">
                     <div>
-                        <div class="font-black text-[0.95rem] uppercase tracking-wider">Português</div>
-                        <div class="text-text-gray text-[0.75rem] mt-0.5">Versão em português</div>
+                        <div class="font-black text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] uppercase tracking-wide sm:tracking-wider">Português</div>
+                        <div class="text-text-gray text-[0.7rem] sm:text-[0.75rem] mt-0.5">Versão em português</div>
                     </div>
                     <svg class="ml-auto text-papaya-orange opacity-60" width="18" height="18" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -105,8 +105,8 @@
                 </a>
                 <a href="./CV_files/CV_Lucas_Hernandes_Andreoni_English.pdf" download class="resume-download-btn">
                     <div>
-                        <div class="font-black text-[0.95rem] uppercase tracking-wider">English</div>
-                        <div class="text-text-gray text-[0.75rem] mt-0.5">English version</div>
+                        <div class="font-black text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] uppercase tracking-wide sm:tracking-wider">English</div>
+                        <div class="text-text-gray text-[0.7rem] sm:text-[0.75rem] mt-0.5">English version</div>
                     </div>
                     <svg class="ml-auto text-papaya-orange opacity-60" width="18" height="18" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -120,19 +120,19 @@
 
     <!-- Mobile Menu -->
     <div id="mobileMenu"
-        class="mobile-menu fixed top-0 right-0 w-64 h-full bg-black/95 backdrop-blur-lg z-[999] md:hidden">
-        <div class="flex flex-col items-start p-8 pt-24 space-y-8">
+        class="mobile-menu fixed top-0 right-0 w-64 sm:w-72 h-full bg-black/95 backdrop-blur-lg z-[999] md:hidden">
+        <div class="flex flex-col items-start p-6 sm:p-8 pt-20 sm:pt-24 space-y-6 sm:space-y-8">
             <a href="#experiencia"
-                class="mobile-menu-link text-xl font-black uppercase tracking-widest text-white hover:text-papaya-orange transition-colors">Experiência</a>
+                class="mobile-menu-link text-lg sm:text-xl font-black uppercase tracking-wider sm:tracking-widest text-white hover:text-papaya-orange transition-colors">Experiência</a>
             <a href="#formacao"
-                class="mobile-menu-link text-xl font-black uppercase tracking-widest text-white hover:text-papaya-orange transition-colors">Formação</a>
+                class="mobile-menu-link text-lg sm:text-xl font-black uppercase tracking-wider sm:tracking-widest text-white hover:text-papaya-orange transition-colors">Formação</a>
             <a href="#projetosAccanto"
-                class="mobile-menu-link text-xl font-black uppercase tracking-widest text-white hover:text-papaya-orange transition-colors">Projetos</a>
+                class="mobile-menu-link text-lg sm:text-xl font-black uppercase tracking-wider sm:tracking-widest text-white hover:text-papaya-orange transition-colors">Projetos</a>
             <a href="#footer"
-                class="mobile-menu-link text-xl font-black uppercase tracking-widest text-white hover:text-papaya-orange transition-colors">Contato</a>
-            <div class="pt-4 border-t border-white/10 w-full">
+                class="mobile-menu-link text-lg sm:text-xl font-black uppercase tracking-wider sm:tracking-widest text-white hover:text-papaya-orange transition-colors">Contato</a>
+            <div class="pt-3 sm:pt-4 border-t border-white/10 w-full">
                 <button id="downloadCVBtnMobile"
-                    class="bg-papaya-orange text-black px-6 py-3 font-black text-[0.75rem] uppercase tracking-widest rounded-[2px] hover:brightness-110 transition-all duration-500 inline-block cursor-pointer">Download
+                    class="bg-papaya-orange text-black px-5 sm:px-6 py-2.5 sm:py-3 font-black text-[0.7rem] sm:text-[0.75rem] uppercase tracking-wider sm:tracking-widest rounded-[2px] hover:brightness-110 transition-all duration-500 inline-block cursor-pointer">Download
                     CV</button>
             </div>
         </div>
@@ -141,68 +141,68 @@
     <main>
         <!-- Hero Section -->
         <section id="hero"
-            class="min-h-screen flex flex-col justify-center items-center text-center relative bg-[radial-gradient(circle_at_center,_#1a1a1a_0%,_#0b0b0b_100%)] overflow-hidden p-[120px_8vw]">
+            class="min-h-screen flex flex-col justify-center items-center text-center relative bg-[radial-gradient(circle_at_center,_#1a1a1a_0%,_#0b0b0b_100%)] overflow-hidden p-[60px_5vw] sm:p-[80px_6vw] md:p-[100px_7vw] lg:p-[120px_8vw]">
             <div class="hero-bg"></div>
 
             <div class="hero-content relative z-10 reveal transition-all duration-500 ease-premium">
 
                 <h1
-                    class="text-[clamp(3rem,12vw,8rem)] leading-[0.85] mb-5 font-outfit uppercase font-black tracking-tighter">
+                    class="text-[clamp(3rem,12vw,8rem)] leading-[0.85] mb-3 sm:mb-4 md:mb-5 font-outfit uppercase font-black tracking-tighter">
                     LUCAS<br>ANDREONI</h1>
-                <p class="text-base text-papaya-orange font-bold tracking-[0.4em] mb-1">ENGENHARIA DA COMPUTAÇÃO</p>
-                <div class="subtitle text-[0.9rem] text-text-gray tracking-widest font-light uppercase opacity-80">
+                <p class="text-[0.7rem] sm:text-[0.8rem] md:text-base text-papaya-orange font-bold tracking-[0.3em] sm:tracking-[0.35em] md:tracking-[0.4em] mb-1">ENGENHARIA DA COMPUTAÇÃO</p>
+                <div class="subtitle text-[0.75rem] sm:text-[0.8rem] md:text-[0.9rem] text-text-gray tracking-wider sm:tracking-widest font-light uppercase opacity-80">
                     RECIFE, PE</div>
             </div>
         </section>
 
-        <section id="experiencia" class="p-[120px_8vw] relative">
+        <section id="experiencia" class="p-[60px_5vw] sm:p-[80px_6vw] md:p-[100px_7vw] lg:p-[120px_8vw] relative">
             <h2
-                class="text-[3.5rem] mb-[60px] text-left relative font-outfit uppercase font-black tracking-tighter after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:w-[60px] after:h-[4px] after:bg-papaya-orange reveal transition-all duration-500 ease-premium">
+                class="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] mb-[40px] sm:mb-[50px] md:mb-[60px] text-left relative font-outfit uppercase font-black tracking-tighter after:content-[''] after:absolute after:bottom-[-15px] after:left-0 after:w-[60px] after:h-[4px] after:bg-papaya-orange reveal transition-all duration-500 ease-premium">
                 Experiência<br>Profissional</h2>
             <div
-                class="relative max-w-[1000px] mx-auto py-10 before:content-[''] before:absolute before:left-1/2 before:top-0 before:w-[2px] before:h-full before:bg-gradient-to-b before:from-transparent before:via-papaya-orange before:to-transparent before:-translate-x-1/2 before:z-0">
+                class="relative max-w-[1000px] mx-auto py-10 before:content-[''] before:absolute before:left-[10px] md:before:left-1/2 before:top-0 before:w-[2px] before:h-full before:bg-gradient-to-b before:from-transparent before:via-papaya-orange before:to-transparent before:-translate-x-1/2 before:z-0">
 
                 <!-- Timeline Item 1 (Current) -->
                 <div
-                    class="relative w-full md:w-1/2 p-10 mb-[30px] transition-all duration-500 ease-premium md:left-1/2 md:text-left reveal transition-all duration-500 ease-premium">
+                    class="relative w-full md:w-1/2 p-5 sm:p-8 md:p-10 mb-[30px] transition-all duration-500 ease-premium md:left-1/2 md:text-left reveal transition-all duration-500 ease-premium">
                     <div
-                        class="timeline-dot absolute top-[50px] w-5 h-5 bg-papaya-orange rounded-full z-20 shadow-[0_0_20px_#FF8700] md:left-[-10px] left-[-10px] animate-pulse">
+                        class="timeline-dot absolute top-[30px] sm:top-[40px] md:top-[50px] w-4 h-4 sm:w-5 sm:h-5 bg-papaya-orange rounded-full z-20 shadow-[0_0_20px_#FF8700] left-[2px] md:left-[-10px] animate-pulse">
                     </div>
                     <div
-                        class="timeline-content bg-dark-gray border border-papaya-orange/30 p-10 relative backdrop-blur-md hover:border-papaya-orange transition-all duration-500 group">
+                        class="timeline-content bg-dark-gray border border-papaya-orange/30 p-5 sm:p-8 md:p-10 relative backdrop-blur-md hover:border-papaya-orange transition-all duration-500 group">
                         <!-- Current Badge -->
                         <div
-                            class="absolute -top-3 right-4 bg-papaya-orange text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest flex items-center gap-2 shadow-lg z-30 group-hover:scale-110 transition-transform">
+                            class="absolute -top-3 right-2 sm:right-4 bg-papaya-orange text-black px-3 py-1 sm:px-4 rounded-full text-[0.65rem] sm:text-xs font-black uppercase tracking-wider sm:tracking-widest flex items-center gap-1 sm:gap-2 shadow-lg z-30 group-hover:scale-110 transition-transform">
                             <span class="w-2 h-2 bg-black rounded-full animate-pulse"></span>
                             <span>ATUAL</span>
                         </div>
 
-                        <div class="timeline-header flex flex-col md:flex-row items-start gap-5 mb-5 text-left">
+                        <div class="timeline-header flex flex-col md:flex-row items-start gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-5 text-left">
                             <div
-                                class="timeline-logo w-[60px] h-[60px] bg-white rounded-lg flex-shrink-0 overflow-hidden flex items-center justify-center border-2 border-white/5 mx-auto md:mx-0 transition-transform group-hover:scale-105">
+                                class="timeline-logo w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] bg-white rounded-lg flex-shrink-0 overflow-hidden flex items-center justify-center border-2 border-white/5 mx-0 transition-transform group-hover:scale-105">
                                 <img src="https://scontent.frec3-1.fna.fbcdn.net/v/t39.30808-1/269601161_787913875942592_6038301853710936062_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=TGqRX5pTvSAQ7kNvwEYV9Bz&_nc_oc=AdmEJZuONpTX8u4x9mV5hHv4tTjgkdomUEyHlDsVC9bMlvAphIFHAtf5DFohTuEpZhTGG42IXhou2CLPLuP2rtu2&_nc_zt=24&_nc_ht=scontent.frec3-1.fna&_nc_gid=s7sHeAoPc_ghfBB5hs5Q2w&oh=00_AftVdfop2J8IQ-u9ibjQrOp0dAdDFVdtliXv1CHcBU6PVQ&oe=69A25828"
                                     alt="Axis" class="w-4/5 h-4/5 object-contain">
                             </div>
                             <div class="flex-1 w-full text-left">
                                 <span
-                                    class="timeline-date text-papaya-orange font-black text-[0.8rem] tracking-[0.2em] mb-2.5 block">SET
+                                    class="timeline-date text-papaya-orange font-black text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] tracking-[0.15em] sm:tracking-[0.2em] mb-2.5 block">SET
                                     2024 - <span class="animate-pulse">ATUAL</span></span>
                                 <h3
-                                    class="timeline-role text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
+                                    class="timeline-role text-[1.3rem] sm:text-[1.5rem] md:text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
                                     ANALISTA</h3>
                                 <span
-                                    class="timeline-company text-[0.9rem] text-text-gray uppercase tracking-widest mb-5 block">
+                                    class="timeline-company text-[0.75rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray uppercase tracking-wider sm:tracking-widest mb-5 block">
                                     Axis Gestão e Negócios</span>
                             </div>
                         </div>
-                        <p class="timeline-body text-[0.9rem] text-text-gray">Atuação em auditoria de contratos
+                        <p class="timeline-body text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray leading-relaxed">Atuação em auditoria de contratos
                             imobiliários e gestão de documentação crítica de processos.</p>
                     </div>
                 </div>
 
                 <!-- Timeline Item 2 -->
                 <div
-                    class="relative w-full md:w-1/2 p-10 mb-[30px] transition-all duration-500 ease-premium md:left-0 md:text-right reveal transition-all duration-500 ease-premium">
+                    class="relative w-full md:w-1/2 p-5 sm:p-8 md:p-10 mb-[30px] transition-all duration-500 ease-premium md:left-0 md:text-right reveal transition-all duration-500 ease-premium">
                     <div
                         class="timeline-dot absolute top-[50px] w-5 h-5 bg-papaya-orange rounded-full z-10 shadow-[0_0_20px_#FF8700] md:right-[-10px] left-[-10px] md:left-auto">
                     </div>
@@ -216,17 +216,17 @@
                             </div>
                             <div class="flex-1 w-full text-left md:text-right">
                                 <span
-                                    class="timeline-date text-papaya-orange font-black text-[0.8rem] tracking-[0.2em] mb-2.5 block">
+                                    class="timeline-date text-papaya-orange font-black text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] tracking-[0.15em] sm:tracking-[0.2em] mb-2.5 block">
                                     NOV 2023 - SET 2024</span>
                                 <h3
-                                    class="timeline-role text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
+                                    class="timeline-role text-[1.3rem] sm:text-[1.5rem] md:text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
                                     ANALISTA DE<br>SISTEMAS JUNIOR</h3>
                                 <span
-                                    class="timeline-company text-[0.9rem] text-text-gray uppercase tracking-widest mb-5 block">
+                                    class="timeline-company text-[0.75rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray uppercase tracking-wider sm:tracking-widest mb-5 block">
                                     Deloitte Touche Tohmatsu</span>
                             </div>
                         </div>
-                        <p class="timeline-body text-[0.9rem] text-text-gray text-left">
+                        <p class="timeline-body text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray text-left leading-relaxed">
                             Desenvolvimento e manutenção de robôs de automação (RPA) com UiPath,
                             manutenção em projetos web (.NET/C#), aplicações desktop (Python) e treinamento dos novos
                             estagiários.
@@ -236,30 +236,30 @@
 
                 <!-- Timeline Item 3 -->
                 <div
-                    class="relative w-full md:w-1/2 p-10 mb-[30px] transition-all duration-500 ease-premium md:left-1/2 md:text-left reveal transition-all duration-500 ease-premium">
+                    class="relative w-full md:w-1/2 p-5 sm:p-8 md:p-10 mb-[30px] transition-all duration-500 ease-premium md:left-1/2 md:text-left reveal transition-all duration-500 ease-premium">
                     <div
-                        class="timeline-dot absolute top-[50px] w-5 h-5 bg-papaya-orange rounded-full z-10 shadow-[0_0_20px_#FF8700] left-[-10px]">
+                        class="timeline-dot absolute top-[30px] sm:top-[40px] md:top-[50px] w-4 h-4 sm:w-5 sm:h-5 bg-papaya-orange rounded-full z-10 shadow-[0_0_20px_#FF8700] left-[2px] md:left-[-10px]">
                     </div>
-                    <div class="timeline-content bg-dark-gray border border-white/5 p-10 relative backdrop-blur-md">
-                        <div class="timeline-header flex flex-col md:flex-row items-start gap-5 mb-5 text-left">
+                    <div class="timeline-content bg-dark-gray border border-white/5 p-5 sm:p-8 md:p-10 relative backdrop-blur-md">
+                        <div class="timeline-header flex flex-col md:flex-row items-start gap-3 sm:gap-4 md:gap-5 mb-4 sm:mb-5 text-left">
                             <div
-                                class="timeline-logo w-[60px] h-[60px] bg-white rounded-lg flex-shrink-0 overflow-hidden flex items-center justify-center border-2 border-white/5 mx-auto md:mx-0">
+                                class="timeline-logo w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] bg-white rounded-lg flex-shrink-0 overflow-hidden flex items-center justify-center border-2 border-white/5 mx-0">
                                 <img src="https://media.licdn.com/dms/image/v2/C560BAQGNtpblgQpJoQ/company-logo_100_100/company-logo_100_100/0/1662120928214/deloitte_logo?e=1773273600&v=beta&t=OatSW4npRnGPXlRDEKHi_jtl3_fgOu0BN7-h4Vo7bac"
                                     alt="Deloitte" class="w-4/5 h-4/5 object-contain">
                             </div>
                             <div class="flex-1 w-full text-left">
                                 <span
-                                    class="timeline-date text-papaya-orange font-black text-[0.8rem] tracking-[0.2em] mb-2.5 block">
+                                    class="timeline-date text-papaya-orange font-black text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] tracking-[0.15em] sm:tracking-[0.2em] mb-2.5 block">
                                     SET 2022 - NOV 2023</span>
                                 <h3
-                                    class="timeline-role text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
+                                    class="timeline-role text-[1.3rem] sm:text-[1.5rem] md:text-[1.8rem] mb-[5px] leading-[1.1] font-outfit uppercase font-black tracking-tighter">
                                     ESTAGIÁRIO</h3>
                                 <span
                                     class="timeline-company text-[0.9rem] text-text-gray uppercase tracking-widest mb-5 block">
                                     Deloitte Touche Tohmatsu</span>
                             </div>
                         </div>
-                        <p class="timeline-body text-[0.9rem] text-text-gray">
+                        <p class="timeline-body text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray leading-relaxed">
                             Foco no desenvolvimento de robôs RPA utilizando UiPath para otimização de processos internos
                             e suporte remoto.
                         </p>
@@ -268,7 +268,7 @@
 
                 <!-- Timeline Item 4 -->
                 <div
-                    class="relative w-full md:w-1/2 p-10 mb-[30px] transition-all duration-500 ease-premium md:left-0 md:text-right reveal transition-all duration-500 ease-premium">
+                    class="relative w-full md:w-1/2 p-5 sm:p-8 md:p-10 mb-[30px] transition-all duration-500 ease-premium md:left-0 md:text-right reveal transition-all duration-500 ease-premium">
                     <div
                         class="timeline-dot absolute top-[50px] w-5 h-5 bg-papaya-orange rounded-full z-10 shadow-[0_0_20px_#FF8700] md:right-[-10px] left-[-10px] md:left-auto">
                     </div>
@@ -292,7 +292,7 @@
                                     Gestão e Negócios</span>
                             </div>
                         </div>
-                        <p class="timeline-body text-[0.9rem] text-text-gray text-left">
+                        <p class="timeline-body text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-text-gray text-left leading-relaxed">
                             Atuação remota em auditoria de contratos imobiliários e gestão de documentação crítica de
                             processos.</p>
                     </div>
@@ -300,44 +300,44 @@
             </div>
         </section>
 
-        <section id="formacao" class="bg-[#080808] py-[120px] px-[8vw]">
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-[60px] max-w-[1400px] mx-auto">
-                <div class="flex flex-col gap-10 reveal transition-all duration-500 ease-premium">
+        <section id="formacao" class="bg-[#080808] py-[60px] sm:py-[80px] md:py-[100px] lg:py-[120px] px-[5vw] sm:px-[6vw] md:px-[7vw] lg:px-[8vw]">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-[40px] sm:gap-[50px] md:gap-[60px] max-w-[1400px] mx-auto">
+                <div class="flex flex-col gap-6 sm:gap-8 md:gap-10 reveal transition-all duration-500 ease-premium">
                     <div
-                        class="bg-black border-2 border-white/5 p-10 relative transition-all duration-500 ease-premium rounded-sm hover:border-papaya-orange hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,135,0,0.1)] group">
+                        class="bg-black border-2 border-white/5 p-6 sm:p-8 md:p-10 relative transition-all duration-500 ease-premium rounded-sm hover:border-papaya-orange hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,135,0,0.1)] group">
                         <h3
-                            class="text-[1.8rem] text-white mb-[15px] font-outfit uppercase font-black tracking-tighter">
+                            class="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] text-white mb-[15px] font-outfit uppercase font-black tracking-tighter">
                             Formação Acadêmica
                         </h3>
                         <span
-                            class="text-[0.95rem] font-extrabold text-papaya-orange uppercase tracking-widest block mb-1">
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.95rem] font-extrabold text-papaya-orange uppercase tracking-wider sm:tracking-widest block mb-1">
                             UPE — Universidade de Pernambuco
                         </span>
-                        <div class="font-semibold text-[1.2rem] text-white mt-2.5">Engenharia da Computação</div>
-                        <p class="text-text-gray text-[0.9rem] mt-[15px]">Bacharelado - Cursando</p>
+                        <div class="font-semibold text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-white mt-2.5">Engenharia da Computação</div>
+                        <p class="text-text-gray text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] mt-[15px]">Bacharelado - Cursando</p>
                     </div>
 
                     <div
-                        class="bg-black border-2 border-white/5 p-10 relative transition-all duration-500 ease-premium rounded-sm hover:border-papaya-orange hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,135,0,0.1)] group">
+                        class="bg-black border-2 border-white/5 p-6 sm:p-8 md:p-10 relative transition-all duration-500 ease-premium rounded-sm hover:border-papaya-orange hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,135,0,0.1)] group">
                         <div class="mt-2.5">
                             <h4
-                                class="text-[1.8rem] text-white mb-[15px] font-outfit uppercase font-black tracking-tighter">
+                                class="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] text-white mb-[15px] font-outfit uppercase font-black tracking-tighter">
                                 Idiomas</h4>
-                            <div class="grid grid-cols-2 gap-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                                 <div
-                                    class="bg-black border-2 border-white/5 p-5 rounded-sm flex items-center gap-[15px] transition-all duration-500 ease-premium hover:border-papaya-orange hover:-translate-y-1.5 hover:bg-papaya-orange/[0.02]">
-                                    <span class="text-[1.4rem]">🇧🇷</span>
+                                    class="bg-black border-2 border-white/5 p-4 sm:p-5 rounded-sm flex items-center gap-3 sm:gap-[15px] transition-all duration-500 ease-premium hover:border-papaya-orange hover:-translate-y-1.5 hover:bg-papaya-orange/[0.02]">
+                                    <span class="text-[1.2rem] sm:text-[1.4rem]">🇧🇷</span>
                                     <div>
-                                        <div class="font-bold text-[0.9rem]">Português</div>
-                                        <div class="text-[0.75rem] text-text-gray">Nativo</div>
+                                        <div class="font-bold text-[0.85rem] sm:text-[0.9rem]">Português</div>
+                                        <div class="text-[0.7rem] sm:text-[0.75rem] text-text-gray">Nativo</div>
                                     </div>
                                 </div>
                                 <div
-                                    class="bg-black border-2 border-white/5 p-5 rounded-sm flex items-center gap-[15px] transition-all duration-500 ease-premium hover:border-papaya-orange hover:-translate-y-1.5 hover:bg-papaya-orange/[0.02]">
-                                    <span class="text-[1.4rem]">🇺🇸</span>
+                                    class="bg-black border-2 border-white/5 p-4 sm:p-5 rounded-sm flex items-center gap-3 sm:gap-[15px] transition-all duration-500 ease-premium hover:border-papaya-orange hover:-translate-y-1.5 hover:bg-papaya-orange/[0.02]">
+                                    <span class="text-[1.2rem] sm:text-[1.4rem]">🇺🇸</span>
                                     <div>
-                                        <div class="font-bold text-[0.9rem]">Inglês</div>
-                                        <div class="text-[0.75rem] text-text-gray">Avançado</div>
+                                        <div class="font-bold text-[0.85rem] sm:text-[0.9rem]">Inglês</div>
+                                        <div class="text-[0.7rem] sm:text-[0.75rem] text-text-gray">Avançado</div>
                                     </div>
                                 </div>
                             </div>
@@ -346,63 +346,63 @@
                 </div>
 
                 <div class="flex flex-col reveal transition-all duration-500 ease-premium delay-200">
-                    <div class="mb-[30px]">
-                        <h2 class="text-[2.5rem] font-outfit uppercase font-black tracking-tighter text-white">
+                    <div class="mb-[20px] sm:mb-[25px] md:mb-[30px]">
+                        <h2 class="text-[1.8rem] sm:text-[2rem] md:text-[2.5rem] font-outfit uppercase font-black tracking-tighter text-white">
                             Certificações</h2>
                     </div>
                     <div
                         class="max-h-[500px] overflow-y-auto pr-5 flex flex-col gap-3 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-papaya-orange [&::-webkit-scrollbar-thumb]:rounded-full">
                         <!-- Cert 1 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
-                            <span class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Cesar
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            <span class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Cesar
                                 School</span>
-                            <div class="font-semibold text-[0.95rem] text-white">FAST - Engenharia de Qualidade de
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">FAST - Engenharia de Qualidade de
                                 Software</div>
                         </div>
                         <!-- Cert 2 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
-                            <span class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Fundação
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            <span class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Fundação
                                 Estudar</span>
-                            <div class="font-semibold text-[0.95rem] text-white">CS50: Introduction to Computer
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">CS50: Introduction to Computer
                                 Science</div>
                         </div>
                         <!-- Cert 3 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
                             <span
-                                class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Udemy</span>
-                            <div class="font-semibold text-[0.95rem] text-white">Spring Boot, Hibernate, REST, JWT,
+                                class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Udemy</span>
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">Spring Boot, Hibernate, REST, JWT,
                                 MySQL/MongoDB</div>
                         </div>
                         <!-- Cert 4 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
-                            <span class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">LinkedIn
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            <span class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">LinkedIn
                                 Learning</span>
-                            <div class="font-semibold text-[0.95rem] text-white">What Is Generative AI?</div>
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">What Is Generative AI?</div>
                         </div>
                         <!-- Cert 5 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
                             <span
-                                class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Rocketseat</span>
-                            <div class="font-semibold text-[0.95rem] text-white">NLW Agents</div>
+                                class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Rocketseat</span>
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">NLW Agents</div>
                         </div>
                         <!-- Cert 6 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
                             <span
-                                class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Rocketseat</span>
-                            <div class="font-semibold text-[0.95rem] text-white">Desafio Micro SaaS</div>
+                                class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Rocketseat</span>
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">Desafio Micro SaaS</div>
                         </div>
                         <!-- Cert 7 -->
                         <div
-                            class="bg-white/5 border-2 border-white/5 p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
+                            class="bg-white/5 border-2 border-white/5 p-4 sm:p-5 md:p-[20px_25px] rounded-lg transition-all duration-500 ease-premium hover:border-papaya-orange hover:translate-x-2.5 hover:bg-papaya-orange/[0.05]">
                             <span
-                                class="text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Cambridge</span>
-                            <div class="font-semibold text-[0.95rem] text-white">Key English Test (KET)</div>
+                                class="text-[0.6rem] sm:text-[0.65rem] font-extrabold text-papaya-orange uppercase block mb-1">Cambridge</span>
+                            <div class="font-semibold text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] text-white">Key English Test (KET)</div>
                         </div>
                     </div>
                 </div>
@@ -413,19 +413,19 @@
         <section id="projetosAccanto"
             class="flex flex-col lg:flex-row bg-white text-black min-h-[80vh] p-0 reveal transition-all duration-500 ease-premium">
             <div
-                class="w-full lg:w-1/2 min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-white">
-                <img src="./images/accanto.png" alt="Inova Repe" class="w-[600px] h-[569px] object-contain">
+                class="w-full lg:w-1/2 min-h-[40vh] sm:min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-white p-8">
+                <img src="./images/accanto.png" alt="Accanto Investimentos" class="w-full max-w-[600px] h-auto object-contain">
             </div>
-            <div class="w-full lg:w-1/2 p-[120px_8vw] flex flex-col justify-center">
-                <span class="text-black/60 font-bold uppercase tracking-widest text-xs mb-4">Desenvolvimento Landing
+            <div class="w-full lg:w-1/2 p-[60px_5vw] sm:p-[80px_6vw] md:p-[100px_7vw] lg:p-[120px_8vw] flex flex-col justify-center">
+                <span class="text-black/60 font-bold uppercase tracking-widest text-[0.65rem] sm:text-xs mb-3 sm:mb-4">Desenvolvimento Landing
                     Page</span>
                 <h2
-                    class="text-[3rem] lg:text-[4rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[30px]">
+                    class="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[20px] sm:mb-[25px] md:mb-[30px]">
                     ACCANTO<br>INVESTIMENTOS.</h2>
-                <p class="text-[1.1rem] mb-10 text-[#333]">Desenvolvi a landing page do escritório Accanto
+                <p class="text-[0.95rem] sm:text-[1rem] md:text-[1.1rem] mb-8 sm:mb-10 text-[#333]">Desenvolvi a landing page do escritório Accanto
                     Investimentos, credenciado à XP, utilizando o Framework Django.</p>
                 <a href="https://www.accantoinvestimentos.com.br/" target="_blank"
-                    class="px-10 py-5 bg-black text-white font-black uppercase tracking-[0.2em] text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
+                    class="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
                     site</a>
             </div>
         </section>
@@ -434,19 +434,19 @@
         <section id="projetosIntelifisco"
             class="flex flex-col lg:flex-row bg-[#FFD74B] text-black min-h-[80vh] p-0 reveal transition-all duration-500 ease-premium">
             <div
-                class="w-full lg:w-1/2 min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-[#FFD74B]">
-                <img src="./images/intelifisco.png" alt="Inova Repe" class="w-[600px] h-[569px] object-contain">
+                class="w-full lg:w-1/2 min-h-[40vh] sm:min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-[#FFD74B] p-8">
+                <img src="./images/intelifisco.png" alt="Intelifisco" class="w-full max-w-[600px] h-auto object-contain">
             </div>
-            <div class="w-full lg:w-1/2 p-[120px_8vw] flex flex-col justify-center">
-                <span class="text-black/60 font-bold uppercase tracking-widest text-xs mb-4">Desenvolvimento Landing
+            <div class="w-full lg:w-1/2 p-[60px_5vw] sm:p-[80px_6vw] md:p-[100px_7vw] lg:p-[120px_8vw] flex flex-col justify-center">
+                <span class="text-black/60 font-bold uppercase tracking-widest text-[0.65rem] sm:text-xs mb-3 sm:mb-4">Desenvolvimento Landing
                     Page</span>
                 <h2
-                    class="text-[3rem] lg:text-[5rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[30px]">
+                    class="text-[2rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[20px] sm:mb-[25px] md:mb-[30px]">
                     INTELIFISCO.</h2>
-                <p class="text-[1.1rem] mb-10 text-[#333]">Desenvolvi a landing page da empresa de consultoria
+                <p class="text-[0.95rem] sm:text-[1rem] md:text-[1.1rem] mb-8 sm:mb-10 text-[#333]">Desenvolvi a landing page da empresa de consultoria
                     Intelifisco utilizando o Framework Django.</p>
                 <a href="https://www.intelifisco.com.br/pt-br/" target="_blank"
-                    class="px-10 py-5 bg-black text-white font-black uppercase tracking-[0.2em] text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
+                    class="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
                     site</a>
             </div>
         </section>
@@ -455,65 +455,65 @@
         <section id="projetosInovaRepe"
             class="flex flex-col lg:flex-row bg-[#EE0FF2] text-black min-h-[80vh] p-0 reveal transition-all duration-500 ease-premium">
             <div
-                class="w-full lg:w-1/2 min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-white">
+                class="w-full lg:w-1/2 min-h-[40vh] sm:min-h-[50vh] lg:min-h-[80vh] lg:h-full flex items-center justify-center overflow-hidden bg-white p-8">
                 <img src="https://www.inovarepe.com/img/logonova.png" alt="Inova Repe"
-                    class="w-[600px] h-[569px] object-contain">
+                    class="w-full max-w-[600px] h-auto object-contain">
             </div>
-            <div class="w-full lg:w-1/2 p-[120px_8vw] flex flex-col justify-center">
-                <span class="text-black/60 font-bold uppercase tracking-widest text-xs mb-4">Inovação aberta</span>
+            <div class="w-full lg:w-1/2 p-[60px_5vw] sm:p-[80px_6vw] md:p-[100px_7vw] lg:p-[120px_8vw] flex flex-col justify-center">
+                <span class="text-black/60 font-bold uppercase tracking-widest text-[0.65rem] sm:text-xs mb-3 sm:mb-4">Inovação aberta</span>
                 <h2
-                    class="text-[3rem] lg:text-[4rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[30px]">
+                    class="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] font-outfit uppercase font-black tracking-tighter leading-[0.85] mb-[20px] sm:mb-[25px] md:mb-[30px]">
                     INOVA<br>REPE.</h2>
-                <p class="text-[1.1rem] mb-10 text-[#333]">Aprovado no programa de inovação aberta da Universidade de
+                <p class="text-[0.95rem] sm:text-[1rem] md:text-[1.1rem] mb-8 sm:mb-10 text-[#333]">Aprovado no programa de inovação aberta da Universidade de
                     Pernambuco.</p>
                 <a href="https://www.inovarepe.com/index.php" target="_blank"
-                    class="px-10 py-5 bg-black text-white font-black uppercase tracking-[0.2em] text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
+                    class="px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 bg-black text-white font-black uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[0.7rem] sm:text-[0.75rem] md:text-[0.8rem] inline-block self-start hover:bg-papaya-orange transition-colors duration-500">Ver
                     site</a>
             </div>
         </section>
     </main>
 
-    <footer id="footer" class="py-[120px] px-[8vw] bg-black border-t border-glass">
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-[40px] lg:gap-20">
+    <footer id="footer" class="py-[60px] sm:py-[80px] md:py-[100px] lg:py-[120px] px-[5vw] sm:px-[6vw] md:px-[7vw] lg:px-[8vw] bg-black border-t border-glass">
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-[30px] sm:gap-[35px] md:gap-[40px] lg:gap-20">
             <div class="footer-info">
-                <h2 class="text-[3rem] font-outfit uppercase font-black tracking-tighter mb-5">Lucas Andreoni</h2>
-                <p class="text-text-gray max-w-[400px] mb-[30px]">Transformando problemas reais em soluções inteligentes
+                <h2 class="text-[2rem] sm:text-[2.5rem] md:text-[3rem] font-outfit uppercase font-black tracking-tighter mb-4 sm:mb-5">Lucas Andreoni</h2>
+                <p class="text-text-gray text-[0.85rem] sm:text-[0.9rem] md:text-[0.95rem] max-w-[400px] mb-[20px] sm:mb-[25px] md:mb-[30px] leading-relaxed">Transformando problemas reais em soluções inteligentes
                     através da tecnologia. Sempre buscando
                     inovação e novos desafios.</p>
-                <p class="text-[1.2rem] text-white font-bold">Recife, PE — Brasil</p>
-                <p class="text-[1.2rem] text-white font-bold">(81) 99202-5501</p>
-                <p class="text-[1.2rem] text-white font-bold">lucasandreoni2000@gmail.com</p>
+                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-white font-bold mb-1">Recife, PE — Brasil</p>
+                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-white font-bold mb-1">(81) 99202-5501</p>
+                <p class="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem] text-white font-bold">lucasandreoni2000@gmail.com</p>
             </div>
             <div class="footer-links">
-                <h4 class="text-[0.7rem] tracking-[0.2em] text-papaya-orange font-bold mb-[25px] uppercase">NETWORKS
+                <h4 class="text-[0.65rem] sm:text-[0.7rem] tracking-[0.15em] sm:tracking-[0.2em] text-papaya-orange font-bold mb-[20px] sm:mb-[25px] uppercase">NETWORKS
                 </h4>
                 <ul class="list-none">
-                    <li class="mb-3"><a href="https://github.com/andreoni10" target="_blank"
-                            class="text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">GitHub</a>
+                    <li class="mb-2 sm:mb-3"><a href="https://github.com/andreoni10" target="_blank"
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">GitHub</a>
                     </li>
-                    <li class="mb-3"><a href="https://linkedin.com/in/lucashernandesandreoni" target="_blank"
-                            class="text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">LinkedIn</a>
+                    <li class="mb-2 sm:mb-3"><a href="https://linkedin.com/in/lucashernandesandreoni" target="_blank"
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">LinkedIn</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4 class="text-[0.7rem] tracking-[0.2em] text-papaya-orange font-bold mb-[25px] uppercase">MENU
+                <h4 class="text-[0.65rem] sm:text-[0.7rem] tracking-[0.15em] sm:tracking-[0.2em] text-papaya-orange font-bold mb-[20px] sm:mb-[25px] uppercase">MENU
                 </h4>
                 <ul class="list-none">
-                    <li class="mb-3"><a href="#experiencia"
-                            class="text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Experiência</a>
+                    <li class="mb-2 sm:mb-3"><a href="#experiencia"
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Experiência</a>
                     </li>
-                    <li class="mb-3"><a href="#formacao"
-                            class="text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Formação</a>
+                    <li class="mb-2 sm:mb-3"><a href="#formacao"
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Formação</a>
                     </li>
-                    <li class="mb-3"><a href="#projetosAccanto"
-                            class="text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Projetos</a>
+                    <li class="mb-2 sm:mb-3"><a href="#projetosAccanto"
+                            class="text-[0.8rem] sm:text-[0.85rem] md:text-[0.9rem] text-white hover:text-papaya-orange hover:pl-1 transition-all">Projetos</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div
-            class="mt-20 pt-10 border-t border-glass flex flex-col md:flex-row justify-between items-center text-[0.75rem] text-text-gray gap-4">
+            class="mt-12 sm:mt-16 md:mt-20 pt-6 sm:pt-8 md:pt-10 border-t border-glass flex flex-col md:flex-row justify-between items-center text-[0.7rem] sm:text-[0.75rem] text-text-gray gap-3 sm:gap-4">
             <p>&copy; 2026 Lucas Andreoni.</p>
         </div>
     </footer>
